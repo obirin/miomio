@@ -5,6 +5,11 @@
 form {
     display: flex;
 }
+h1{
+    text-align:center;
+    background-color: blanchedalmond;
+    color:cornflowerblue;
+}
 input,
 button
 {
