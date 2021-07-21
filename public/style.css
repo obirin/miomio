@@ -11,7 +11,7 @@ h1 {
 form {
     display: flex;
 }
-#form {　
+#form {
     display: none;
 }
 input,
@@ -64,72 +64,6 @@ button
     margin-top: -7vw;
     border: 3vw solid transparent;
     border-right: 8vw solid rgb(233, 192, 238);
-    transform: rotate(40deg);
-    z-index: -1;
-}
-
-h1{
-    text-align:center;
-    background-color: blanchedalmond;
-    color:cornflowerblue;
-}
-form {
-    display: flex;
-}
-#form {
-    display: none;
-}
-input,
-button
-{
-    border:1px solid rgb(221, 83, 184);
-    font-size:5vw;
-    height:10vw;
-    padding:0 5vw;
-    outline: 0;
-    line-height:5vw;
-    margin:0;
-}
-input
-{
-    border-radius:5vw 0 0 5vw;
-}
-button
-{
-    border-radius:0 5vw 5vw 0;
-    background: rgb(249, 223, 250);
-}
-#chats
-{
-    font-size:5vw;
-
-}
-#chats dt
-{
-    margin: 2vw 0;
-    border:1px solid rgb(78, 56, 72);
-    border-radius:3vw;
-    padding:1vw 3vw;
-    display: inline-block;
-}
-#chats dt+dd
-{
-    margin-left: 8vw;
-    position: relative;
-    background-color:rgb(118, 99, 126);
-    border-radius:3vw;
-    padding:1vw 3vw;
-}
-#chats dt+dd::before
-{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: -6vw;
-    margin-top: -7vw;
-    border: 3vw solid transparent;
-    border-right: 8vw solid rgb(175, 158, 179);
     transform: rotate(40deg);
     z-index: -1;
 }
