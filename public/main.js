@@ -21,6 +21,7 @@ nameForm.addEventListner('submit', function(event){
  event.preventDefault();
 })
 
+
 form.addEventListner('submit', function(event){
   if(input.value!==''){
   const msg = {msg: input.value, name: username};  
@@ -31,7 +32,18 @@ event.preventDefault();
 })
 
 socketio.on('message',function(msg){
+  displayMessage(msg);
+});
+//参加時に過去のメッセージを受け取る
+socketio.on('signin',function(msg){
+  for(let i=0;i<msgs.length;i++){
+    const msg = msgs[1];
+    displayMessage(msg);
+  }
+});
+
+function displayMessage(msg){
   const li = document.createElement("li");
   li.append(msg.msg + msg.name + ')');
   chats.append(li);
-});
+}
