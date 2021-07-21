@@ -34,6 +34,7 @@ event.preventDefault();
 socketio.on('message',function(msg){
   displayMessage(msg);
 });
+
 //参加時に過去のメッセージを受け取る
 socketio.on('signin',function(msg){
   for(let i=0;i<msgs.length;i++){
@@ -43,7 +44,10 @@ socketio.on('signin',function(msg){
 });
 
 function displayMessage(msg){
-  const li = document.createElement("li");
-  li.append(msg.msg + msg.name + ')');
-  chats.append(li);
+  const dt = document.createElement("dt");
+  const dd = document.createElement("dd");
+  dt.append(msg.name);
+  chats.append(dt)
+  dd.append(msg.msg);
+  chats.append(dd);
 }
