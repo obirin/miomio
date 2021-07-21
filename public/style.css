@@ -17,7 +17,7 @@ form {
 input,
 button
 {
-    border:1px solid #ccc;
+    border:1px solid rgb(238, 181, 238);
     font-size:5vw;
     height:10vw;
     padding:0 5vw;
