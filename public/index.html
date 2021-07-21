@@ -17,24 +17,6 @@
     <form id="form">
       <input id="msg" autocomplete="off" /> <button>送信</button>
     </form>
-  <script src="main.js">
-    const socketio = io();
-    const form = document.getElementById("form");
-    const input = document.getElementByID("msg");
-    const chats = document.getElementById("chats");
-  
-  form.addEventListner('submit', function(event){
-    socketio.emit('message', input.value);
-    input.value='';
-    event.preventDefault();
-  })
-  socketio.on('message',function(data){
-    $("#chats").empty();
-    Object.keys(data).forEach(function (key) {
-      const li = document.createElement("li");
-      $(li).append('<div class="bar" style="width:'+ (data[key] * 2) +'vw"></div>' + key);
-      chats.append(li);
-    });
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
