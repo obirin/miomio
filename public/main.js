@@ -1,4 +1,4 @@
-\const socketio = io();
+const socketio = io();
 const form = document.getElementById("form");
 const input = document.getElementByID("msg");
 const chats = document.getElementById("chats");
