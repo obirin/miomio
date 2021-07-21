@@ -10,7 +10,7 @@ input.value='';
 }
 event.preventDefault();
 })
-socketio.on('message',function(data){
+socketio.on('message',function(msg){
   const li = document.createElement("li");
   li.append(msg);
   chats.append(li);
